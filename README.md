@@ -1,4 +1,4 @@
-# Vue-nba-stats
+# Vue-nhl-stats
 
 # Vue 3 + Typescript + Vite
 
