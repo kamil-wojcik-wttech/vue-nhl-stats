@@ -1,13 +1,25 @@
 <template>
-    <div>
-        <h1>Team Details</h1>
-    </div>
+    <Suspense>
+        <template #default>
+            <TeamDetails />
+        </template>
+        <template #fallback>
+            <Loader />
+        </template>
+    </Suspense>
 </template>
 <script lang="ts">
-export default {
-    
-}
+
+    import { defineAsyncComponent } from "vue";
+    import Loader from '@/components/Loader.vue'
+
+    export default {
+        components: {
+            Loader,
+            TeamDetails: defineAsyncComponent(() => import('@/components/TeamDetails.vue')),
+        }
+    }
+
 </script>
 <style lang="scss">
-    
 </style>
