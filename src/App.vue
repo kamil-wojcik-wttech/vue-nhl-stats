@@ -36,13 +36,13 @@ body {
 
 header {
 	display: flex;
-    flex-direction: column;
-    align-items: center;
+	flex-direction: column;
+	align-items: center;
 	padding-top: 0.5em;
-    background-color: #F0E5CF;
-    -webkit-box-shadow: 0 0 5px 0 rgb(0 0 0 / 75%);
-    box-shadow: 0 0 5px 0 rgb(0 0 0 / 75%);
-    width: 100%;
+	background-color: #F0E5CF;
+	-webkit-box-shadow: 0 0 5px 0 rgb(0 0 0 / 75%);
+	box-shadow: 0 0 5px 0 rgb(0 0 0 / 75%);
+	width: 100%;
 }
 
 .header__logo {
@@ -58,8 +58,8 @@ header {
 .header__navigation {
 	display: flex;
 	margin: 0;
-    padding: 0;
-    list-style: none;
+	padding: 0;
+	list-style: none;
 
 	a {
 		font-size: 1em;
