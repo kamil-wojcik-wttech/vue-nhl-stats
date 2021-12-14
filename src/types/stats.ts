@@ -1,0 +1,30 @@
+export interface TeamStats {
+    evGGARatio: number;
+    faceOffWinPercentage: string;
+    faceOffsLost: number;
+    faceOffsTaken: number;
+    faceOffsWon: number;
+    gamesPlayed: number;
+    goalsAgainstPerGame: number;
+    goalsPerGame: number;
+    losses: number;
+    ot: number
+    penaltyKillPercentage: string;
+    powerPlayGoals: number;
+    powerPlayGoalsAgainst: number;
+    powerPlayOpportunities: number;
+    powerPlayPercentage: string;
+    ptPctg: string;
+    pts: number;
+    savePctg: number;
+    shootingPctg: number;
+    shotsAllowed: number;
+    shotsPerGame: number;
+    winLeadFirstPer: number;
+    winLeadSecondPer: number;
+    winOppScoreFirst: number;
+    winOutshootOpp: number;
+    winOutshotByOpp: number;
+    winScoreFirst: number;
+    wins: number;
+}

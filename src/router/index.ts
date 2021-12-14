@@ -1,5 +1,5 @@
 import { RouteRecordRaw, createRouter, createWebHashHistory } from 'vue-router';
-import Home from '../views/Home.vue';
+import Home from '@/views/Home.vue';
 
 const routes: Array<RouteRecordRaw> = [
     {
@@ -10,26 +10,26 @@ const routes: Array<RouteRecordRaw> = [
     {
         path: '/players',
         name: 'Players',
-        component: () => import(/* webpackChunkName: "players" */ '../views/Players.vue'),
+        component: () => import(/* webpackChunkName: "players" */ '@/views/Players.vue'),
     },
     {
         path: '/players/:id',
         name: 'PlayerDetails',
-        component: () => import(/* webpackChunkName: "players" */ '../views/PlayerDetails.vue'),
+        component: () => import(/* webpackChunkName: "players" */ '@/views/PlayerDetails.vue'),
     },
     {
         path: '/teams',
         name: 'Teams',
-        component: () => import(/* webpackChunkName: "teams" */ '../views/Teams.vue'),
+        component: () => import(/* webpackChunkName: "teams" */ '@/views/Teams.vue'),
     },
     {
         path: '/teams/:id',
-        name: 'Team Details',
-        component: () => import(/* webpackChunkName: "players" */ '../views/TeamDetails.vue')
+        name: 'TeamDetails',
+        component: () => import(/* webpackChunkName: "players" */ '@/views/TeamDetails.vue')
     },
     {
         path: "/:catchAll(.*)",
-        component: () => import(/* webpackChunkName: "error" */ '../views/ErrorPage.vue'),
+        component: () => import(/* webpackChunkName: "error" */ '@/views/ErrorPage.vue'),
     },
 ];
 
