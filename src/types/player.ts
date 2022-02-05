@@ -4,8 +4,8 @@ export interface Player {
         id: number;
         fullName: string;
     };
-    postion: {
-        
+    position: {
+        name: string
     };
 }
 
